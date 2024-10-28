@@ -30,6 +30,7 @@ Matrix4x4 MakeRotateAxisAngle(const Vector3& axis, float angle) {
 	float sin = std::sin(angle);
 
 	Matrix4x4 rotateMatrix = {};
+
 	rotateMatrix.m[0][0] = axis.x * axis.x * (1.0f - cos) + cos;
 	rotateMatrix.m[0][1] = axis.x * axis.y * (1.0f - cos) + axis.z * sin;
 	rotateMatrix.m[0][2] = axis.x * axis.z * (1.0f - cos) - axis.y * sin;
