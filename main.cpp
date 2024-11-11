@@ -47,15 +47,15 @@ Matrix4x4 DirectionToDirection(const Vector3& from, const Vector3& to) {
 	if (std::abs(cos + 1.0f) <= epsilon) {
 		if (std::abs(from.x) > epsilon || std::abs(from.y) > epsilon) {
 			//(ux≠0||uy≠0)の際のaxisの値を入れる
-			axis.x = -from.y;
-			axis.y = from.x;
+			axis.x = from.y;
+			axis.y = -from.x;
 			axis.z = 0.0f;
 		}
 		else if (std::abs(from.x) > epsilon || std::abs(from.z) > epsilon) {
 			//(ux≠0||uz≠0)の際のaxisの値を入れる
-			axis.x = -from.z;
+			axis.x = from.z;
 			axis.y = 0.0f;
-			axis.z = from.x;
+			axis.z = -from.x;
 		}
 		else {
 			// zero vector
