@@ -16,6 +16,7 @@
     <ProjectGuid>{0bc4a122-f06a-4486-ba08-4c9acca4aab0}</ProjectGuid>
     <RootNamespace>Novice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MT4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
